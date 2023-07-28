@@ -119,7 +119,7 @@
     "lint": "eslint"
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": "16.x",
     "npm": ">=7.0.0"
   },
   "browserslist": {
