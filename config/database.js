@@ -5,7 +5,7 @@ const db = new Sequelize(
   "b56562578eae2d",
   "1404ba06",
   {
-    host: "1404ba06@us-cdbr-east-06.cleardb.net",
+    host: "us-cdbr-east-06.cleardb.net",
     dialect: "mysql",
   }
 );
