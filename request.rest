@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJGYWNocnVsIE11c3RvZmEiLCJlbWFpbCI6ImZhY2hydWxtdXN0b2ZhMjAwQGdtYWlsLmNvbSIsImlhdCI6MTYzNTkyMDQ3OCwiZXhwIjoxNjM1OTIwNDk4fQ.geBM8LwigwNMQIqRGu88boAOZoRKC-ziVV1pthFQagE
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "Fachrul Mustofa",
+    "email": "fachrulmustofa200@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fachrulmustofa200@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
