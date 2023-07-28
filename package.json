@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm run build"
+    "heroku-postbuild": "npm run client-install && npm run client-build",
+    "client-install": "cd client && npm install",
+    "client-build": "cd client && npm run build"
   },
   "engines": {
     "node": "16.x"
