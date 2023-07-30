@@ -16,6 +16,7 @@ import SettingsPanel from "../shared-components/SettingsPanel";
 import AdsBanner from "../shared-components/AdsBanner";
 import { SiteInfoContext } from "src/app/App";
 import { useAuth } from "src/app/auth/AuthContext";
+import Hidden from "@mui/material/Hidden";
 
 const Root = styled("div")(({ theme, config }) => ({
   ...(config.mode === "boxed" && {
@@ -74,9 +75,11 @@ function Layout1(props) {
             <AdsBanner />
           )}
           {config.footer.display && (
-            <FooterLayout1
-              className={config.footer.style === "fixed" && "sticky bottom-0"}
-            />
+            <Hidden smDown>
+              <FooterLayout1
+                className={config.footer.style === "fixed" && "sticky bottom-0"}
+              />
+            </Hidden>
           )}
         </main>
 
