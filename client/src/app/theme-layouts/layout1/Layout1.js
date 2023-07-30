@@ -70,7 +70,9 @@ function Layout1(props) {
             {props.children}
           </div>
 
-          {config.banner.display && siteInfo.bannerEnable == 1 && <AdsBanner />}
+          {config.banner.display && siteInfo?.bannerEnable == 1 && (
+            <AdsBanner />
+          )}
           {config.footer.display && (
             <FooterLayout1
               className={config.footer.style === "fixed" && "sticky bottom-0"}
