@@ -33,14 +33,15 @@ app.use(router);
 
 app.use(express.static(path.resolve(__dirname, "./client/build/")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
-});
-
 app.get("/uploads/:file", (req, res) => {
   const { file } = req.params;
   res.sendFile(path.join(__dirname, `./uploads/${file}`));
 });
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+});
+
 app.post("/api/uploads/file", upload.single("file"), uploadFile);
 
 function uploadFile(req, res) {
