@@ -79,7 +79,7 @@ function Home() {
     <div
       className="flex flex-col flex-auto items-center sm:justify-center min-w-0 md:p-32 bg-cover"
       style={{
-        backgroundImage: `url(${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo?.middleLogo})`,
+        backgroundImage: `url(${process.env.REACT_APP_UPLOAD_URL}/${siteInfo?.middleLogo})`,
       }}
     >
       <Paper className="flex w-full sm:w-auto min-h-full sm:min-h-auto md:w-full md:max-w-6xl rounded-0 sm:rounded-2xl sm:shadow overflow-hidden">

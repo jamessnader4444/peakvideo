@@ -7,7 +7,7 @@ function AdsBanner(props) {
     <div className="bg-blue-500 text-white text-center">
       <img
         className="w-full h-[100px]"
-        src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo.bannerLogo}`}
+        src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo.bannerLogo}`}
         alt="banner"
       />
     </div>

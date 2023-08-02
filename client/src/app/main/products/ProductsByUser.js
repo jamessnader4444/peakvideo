@@ -89,7 +89,7 @@ export default function ProductsByUser() {
                     >
                       <img
                         className="rounded-lg py-3 h-[200px]"
-                        src={`${process.env.REACT_APP_SERVER_URL}/uploads/${item.imageURL}`}
+                        src={`${process.env.REACT_APP_UPLOAD_URL}/${item.imageURL}`}
                         alt="image"
                       />
                     </div>

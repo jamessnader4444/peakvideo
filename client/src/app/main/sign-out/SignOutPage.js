@@ -17,7 +17,7 @@ function SignOutPage() {
         <div className="w-full max-w-320 sm:w-320 mx-auto sm:mx-0">
           <img
             className="w-48 mx-auto"
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo?.topLeftLogo}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo?.topLeftLogo}`}
             alt="logo"
           />
 

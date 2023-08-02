@@ -40,7 +40,7 @@ export default function Product() {
           </div>
           <img
             className="w-full sm:w-[300px] rounded-lg h-[200px]"
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${product?.imageURL}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${product?.imageURL}`}
             alt=""
           />
         </div>
@@ -53,7 +53,7 @@ export default function Product() {
                 <div className="aspect-w-16 aspect-h-9">
                   <iframe
                     className="sm:h-[500px] h-[300px]"
-                    src={`${process.env.REACT_APP_SERVER_URL}/uploads/${product.videoURL}`}
+                    src={`${process.env.REACT_APP_UPLOAD_URL}/${product?.videoURL}`}
                     width="100%"
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture"

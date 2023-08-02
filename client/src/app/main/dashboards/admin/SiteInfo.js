@@ -148,7 +148,7 @@ export default function SiteInfo() {
           </div>
           <img
             className="w-40 h-40"
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo.topLeftLogo}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo.topLeftLogo}`}
             alt="logo"
           />
           <div className="mt-48 mb-16 flex">
@@ -179,7 +179,7 @@ export default function SiteInfo() {
           </div>
           <img
             className="w-256 h-128 ml-60"
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo.middleLogo}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo.middleLogo}`}
             alt="logo"
           />
           <div className="mt-48 mb-16">
@@ -314,7 +314,7 @@ export default function SiteInfo() {
             {bannerEnable == 1 && (
               <img
                 className="w-256 h-128 ml-60 mt-10"
-                src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo.bannerLogo}`}
+                src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo.bannerLogo}`}
                 alt="logo"
               />
             )}

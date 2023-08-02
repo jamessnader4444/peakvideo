@@ -61,7 +61,7 @@ function NavbarStyle1Content(props) {
         <div className="flex flex-0 items-center justify-center py-48 opacity-10">
           <img
             className="w-full max-w-64"
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo?.topLeftLogo}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo?.topLeftLogo}`}
             alt="footer logo"
           />
         </div>

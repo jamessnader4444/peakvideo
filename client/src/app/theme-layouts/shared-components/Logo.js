@@ -24,7 +24,7 @@ function Logo() {
       <Link to="/" role="button">
         {siteInfo && (
           <img
-            src={`${process.env.REACT_APP_SERVER_URL}/uploads/${siteInfo?.topLeftLogo}`}
+            src={`${process.env.REACT_APP_UPLOAD_URL}/${siteInfo?.topLeftLogo}`}
             className="logo-icon w-32 h-32"
             alt="logo"
           />
